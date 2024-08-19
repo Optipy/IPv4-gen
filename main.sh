@@ -46,9 +46,9 @@ ip_ranges=(
     "17.66.90.176/29"
 )
 
-# تولید و چاپ آدرس IP تصادفی به همراه کشور
+# تولید و چاپ تنها آدرس IP تصادفی
 for ip_range in "${ip_ranges[@]}"; do
     random_ip=$(generate_random_ip "$ip_range")
     country=$(get_country "$random_ip")
-    echo "Random IP in $ip_range: $random_ip (Country: $country)"
+    echo "$random_ip (Country: $country)"
 done
