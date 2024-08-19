@@ -24,7 +24,7 @@ echo "IP Address for {country_name}: $ip_address"
 """
 
 # ذخیره کردن اسکریپت Bash به فایل
-with open("generate_ip.sh", "w") as file:
+with open("main.sh", "w") as file:
     file.write(bash_script)
 
-print("Bash script generated: generate_ip.sh")
+print("Bash script generated: main.sh")
